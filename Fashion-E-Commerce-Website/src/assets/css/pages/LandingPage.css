@@ -1,0 +1,39 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7fafc;
+}
+
+.landing-startup {
+  width: 100%;
+}
+
+.landing-sections {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .landing {
+    padding-top: 50px;
+  }
+
+  .landing-startup {
+    margin-top: -100px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .landing {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing {
+    padding-top: 40px;
+  }
+}

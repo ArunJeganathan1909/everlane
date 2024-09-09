@@ -1,0 +1,84 @@
+.storesPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .storesPage-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .storesPage-stores-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .storesPage-stores {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 1200px; 
+  }
+  
+  .storesPage-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding-bottom: 10px;
+  }
+  
+  .storesPage-store-image {
+    position: relative;
+    width: 100%;
+    padding-top: 60%; 
+    overflow: hidden;
+    border-radius: 8px; 
+    cursor: pointer;
+  }
+  
+  .storesPage-store-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .storesPage-store-img:hover{
+    
+    transform: scale(1.1);
+  }
+  
+  .storesPage-store-cityName,
+  .storesPage-store-streetName {
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+  }
+  
+  .storesPage-store-cityName {    
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .storesPage-store-streetName {
+    font-size: 14px;
+    color: #666;
+  }
+  

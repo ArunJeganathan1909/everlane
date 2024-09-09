@@ -1,0 +1,392 @@
+.blog-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.toppart,
+.latestblog,
+.progress-area {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  gap: 10px;
+}
+
+.top-part-style {
+  display: flex;
+  width: 100%;
+  height: 15px;
+  background-color: #000000cc;
+}
+
+.toppart-contant-heading {
+  display: block;
+  font-size: 120px;
+  font-weight: bold;
+  color: #000000e8;
+}
+
+.toppart-contant {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  color: #000000e8;
+}
+
+.latestblog-heading,
+.progress-heading {
+  display: flex;
+  margin: 20px 0;
+  font-size: 30px;
+  color: #000000e8;
+}
+
+.latestblog-container {
+  display: grid;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  min-width: 250px;
+  height: 450px;
+  min-height: 400px;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.blog-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-title {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  color: #000000e8;
+}
+
+.blog-type {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.blog-type span {
+  border: 1px solid #000000e8;
+  padding: 0px 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #444343;
+}
+
+.latestblog-morebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latestblog-morebutton button {
+  border: none;
+  background-color: #444343;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 30px;
+  font-size: 13px;
+}
+
+.design-container {
+  display: flex;
+  padding: 40px 40px;
+}
+
+.animation-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+}
+
+.animation-slides {
+  display: flex;
+  animation: slide-animation 30s ease-in-out infinite; /* Reduced duration for smoother experience */
+}
+
+.animation-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.8s ease-in-out;
+}
+
+.animation-slide-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation-slide-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.animation-slide-contant {
+  margin-left: 20px;
+  font-size: 40px;
+  color: #333;
+}
+
+@keyframes slide-animation {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.progress-container {
+  display: flex;
+  width: 100%;
+}
+
+.progress-container-slides {
+  display: grid;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.progress-container-slide {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  min-width: 250px;
+  height: 450px;
+  min-height: 400px;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.progress-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.progress-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.progress-title {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  color: #000000e8;
+}
+
+.social {
+    display: flex;
+    background-color: #333;
+    padding: 60px 40px;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-container-heading{
+    display: flex;
+    font-size: 35px;
+    color: #fff;
+}
+
+.social-button button{
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 7px 40px;
+    display: flex;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .latestblog-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .progress-container-slide {
+    min-width: 200px;
+    height: 350px;
+    min-height: 200px;
+    gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .toppart-contant-heading {
+    font-size: 80px;
+  }
+
+  .toppart-contant {
+    font-size: 15px;
+  }
+
+  .latestblog-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-container {
+    height: 350px;
+  }
+
+  .progress-container-slide {
+    min-width: 150px;
+    height: 300px;
+    min-height: 200px;
+    gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .latestblog-container {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-container {
+    height: 350px;
+    max-width: 300px;
+    min-width: 200px;
+  }
+
+  .progress-container-slides {
+    gap: 5px;
+  }
+
+  .progress-container-slide {
+    min-width: 150px;
+    height: 200px;
+    min-height: 200px;
+    gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .progress-container-slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .progress-container-slide {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .toppart,
+  .latestblog,
+  .progress-area {
+    padding: 10px 10px;
+  }
+
+  .toppart-contant-heading {
+    font-size: 50px;
+  }
+
+  .toppart-contant {
+    font-size: 13px;
+  }
+
+  .blog-container {
+    min-height: 250px;
+    height: 250px;
+    min-width: 150px;
+  }
+
+  .blog-title {
+    font-size: 14px;
+  }
+
+  .blog-type {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .animation-slide-icon {
+    width: 35px;
+    height: 40px;
+  }
+
+  .animation-slide-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .animation-slide-contant {
+    margin-left: 5px;
+    font-size: 28px;
+  }
+
+  .progress-heading {
+    font-size: 20px;
+  }
+
+  .social {
+    display: flex;
+    background-color: #333;
+    padding: 60px 20px;
+}
+
+  .social-container-heading{
+    font-size: 25px;
+}
+}

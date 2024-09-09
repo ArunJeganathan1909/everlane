@@ -1,0 +1,98 @@
+.container-section7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 3px solid #ddd;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  flex-wrap: wrap;
+}
+
+.item {
+  text-align: center;
+  max-width: 400px;
+}
+
+.item img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.item h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(110, 107, 107);
+  margin-top: 20px;
+}
+
+.item p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.item button {
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.item button:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .item {
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .item h3 {
+    font-size: 20px;
+  }
+
+  .item img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+
+  .item button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  .container-section7 {
+    flex-direction: column;
+  }
+  .item {
+    text-align: center;
+    max-width: 300px;
+  }
+  .item h3 {
+    font-size: 20px;
+  }
+
+  .item img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+
+  .item button {
+    font-size: 14px;
+  }
+}

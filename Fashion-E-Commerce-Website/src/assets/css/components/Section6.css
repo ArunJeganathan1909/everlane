@@ -1,0 +1,284 @@
+.product-review-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ccc;
+}
+
+.product-review-pagecontant {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.a111 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.a111-1 {
+  margin-bottom: 20px;
+  width: 65%;
+}
+
+.a111-2{
+  align-items: start;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  justify-content: left;
+}
+
+.a111-1-button{
+  cursor: pointer;
+  background-color: wheat;
+  padding: 8px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.a111-1-buttonSpan {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.a111-1-span {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.a111-1-description{  
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.a111-1-descriptionSpan {
+  font-size: 16px;
+  color: #666;
+}
+
+.review-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.review-card-container {
+  width: 100%;
+  
+}
+
+.review-card {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-details {
+  flex-basis: 60%;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review {
+  font-size: 13px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.rating-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating .fa-star {
+  font-size: 13px;
+  color: #ffd700;
+  margin-right: 5px;
+}
+
+.rating svg{
+  width: 15px;
+  height: 15px;
+}
+
+.reviewer-name-container{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.reviewer-name {
+  font-size: 16px;
+  color: #666;
+}
+
+.salesAgent-container{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+
+.salesAgent-name {
+  font-size: 15px;
+  color: #666;
+}
+
+.salesAgent{
+  font-size: 13px;
+  color: #333;
+}
+
+.slidepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.slidepage svg{
+  width: 20px;
+  height: 20px;
+}
+
+.nav-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  margin: 0 10px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b1a2a2;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dots .dot.active {
+  background-color: #333;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .review-card {
+    height: auto;
+  }
+
+  .product-image {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .a111-1{
+    width: 55%;
+  }
+  .a111-2{
+    margin-left: 10px;
+  }
+
+  .review-page{
+    width: 40%;
+  }
+  .review-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .product-image {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .product-image img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .product-details {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+
+  .rating .fa-star {
+    font-size: 16px;
+  }
+
+  .nav-icon {
+    font-size: 20px;
+  }
+
+  .dots .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .a111{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .a111-1{
+    width: 100%;
+  }
+
+  .a111-1-button{
+    margin-bottom: 20px;
+  }
+
+  .review-page{
+    width: 80%;
+  }
+
+}

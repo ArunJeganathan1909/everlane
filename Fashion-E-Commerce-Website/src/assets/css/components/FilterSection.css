@@ -1,0 +1,256 @@
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filter-section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #000;
+  padding: 10px;
+}
+
+.filter-section-headerSpan {
+  display: flex;
+  font-size: 20px;
+  color: white;
+}
+
+.filter-section-headerIcon {
+  display: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.filter-section-category-downicon,
+.filter-section-gender-upicon,
+.filter-section-gender-downicon,
+.filter-section-category-upicon,
+.filter-section-color-downicon,
+.filter-section-color-upicon,
+.filter-section-size-downicon,
+.filter-section-size-upicon,
+.filter-section-shortby-upicon,
+.filter-section-shortby-downicon {
+  width: 15px;
+  height: 15px;
+}
+
+.filter-section-shortby,
+.gender-container,
+.filter-section-category,
+.filter-section-colorContainer,
+.filter-section-sizeContainer,
+.filter-section-sizeContainer,
+.filter-section-totalProducts,
+.filter-section-priceContainer {
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e9baba;
+}
+
+.filter-section-totalProducts {
+  border-top: none;
+}
+
+.filter-totalProducts {
+  font-size: 15px;
+}
+
+.filter-section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-category-header,
+.filter-shortby-header,
+.filter-gender-header,
+.filter-color-header,
+.filter-size-header {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-category-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+  width: 100%;
+}
+
+.gender{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gender-container span{
+  border: 1px solid #666;
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 2px 10px;
+  width: 100%;
+}
+
+.filter-category-item,
+.shortby-item,
+.filter-priceRange-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.filter-category-item input,
+.shortby-item input,
+.filter-priceRange-item input {
+  margin-right: 8px;
+}
+
+.filter-category-item label,
+.shortby-item label,
+.filter-priceRange-item label {
+  font-size: 15px;
+  color: #666;
+}
+
+.filter-color-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.filter-color-productcolor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+  border-color: #918f8f;
+  transition: border 0.3s ease;
+}
+
+.filter-color-productcolor.selected {
+  border: 2px solid #000; /* Highlight selected color */
+}
+
+.filter-color-colorspan {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.filter-color-colorname {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+
+.filter-size-waist,
+.filter-size-clothing {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 20px;
+}
+
+.filter-size-waistHeader,
+.filter-size-clothingHeader {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.filter-size-waistContainer,
+.filter-size-clothingContainer {
+  display: grid;
+  width: 100%;
+  gap: 0.5rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+}
+
+.filter-size-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 30px;
+  height: 20px;
+  font-size: 14px;
+}
+
+.filter-size-item.selected {
+  background-color: #000;
+  color: #fff; /* Text color when selected */
+}
+
+.filter-priceRange-checkboxContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 530px) and (max-width: 660px) {
+  .filter-size-waistContainer,
+  .filter-size-clothingContainer {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .filter-size-item {
+    padding: 2px 5px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .filter-section-headerIcon {
+    display: block;
+  }
+
+  .filter-section-container {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filter-section-container.visible {
+    display: flex;
+  }
+}
